@@ -375,6 +375,25 @@ fn follow<T: Read>(readers: &mut [BufReader<T>], filenames: &[String], settings:
             break;
         }
     }
+    if cfg!(windows) {
+        let mut buffer = BufReader::new(stdin());
+        loop {
+            let mut datum = String::new();
+            if buffer.read_line(&mut datum).unwrap() == 0 {
+                break;
+            }
+            match buffer.read_line(&mut datum) {
+                Ok(0) => {
+    	      print!("adios\n");
+    	      break;
+    	    },
+                Ok(_) => {
+                },
+                Err(err) => panic!(err)
+            }
+    	print!("hola\n");
+        }
+    }
 }
 
 /// Iterate over bytes in the file, in reverse, until `should_stop` returns
