@@ -2,8 +2,8 @@ uutils coreutils
 ================
 
 [![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/uutils/coreutils/blob/master/LICENSE)
-[![Build Status](https://api.travis-ci.org/uutils/coreutils.svg?branch=master)](https://travis-ci.org/uutils/coreutils)
-[![Build status](https://ci.appveyor.com/api/projects/status/787ltcxgy86r20le?svg=true)](https://ci.appveyor.com/project/Arcterus/coreutils)
+[![Build Status](https://travis-ci.org/uutils/coreutils.svg?branch=master)](https://travis-ci.org/uutils/coreutils)
+[![Build status](https://ci.appveyor.com/api/projects/status/8y8a2da9wtcxfsgp/branch/master?svg=true)](https://ci.appveyor.com/project/albfan/coreutils/branch/master)
 
 uutils is an attempt at writing universal (as in cross-platform) CLI
 utils in [Rust](http://www.rust-lang.org). This repo is to aggregate the GNU
